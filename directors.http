@@ -2,7 +2,7 @@ POST http://localhost:5000/directors/
 Content-Type: application/json
 
 {
-  "name": "superka"
+  "name": "New_director44"
 }
 
 ###
@@ -12,32 +12,32 @@ Accept: application/json
 
 ###
 
-GET http://localhost:5000/directors/43333
+GET http://localhost:5000/directors/23
 Accept: application/json
 
 ###
 
-PUT http://localhost:5000/directors/1
+PUT http://localhost:5000/directors/21
 Accept: application/json
 Content-Type: application/json
 
 {
-  "name": "superka"
+  "name": "superka_test"
 }
 
 ###
 
-DELETE http://localhost:5000/directors/1
+DELETE http://localhost:5000/directors/24
 Accept: application/json
 
 ###
 
-PATCH http://localhost:5000/directors/1
+PATCH http://localhost:5000/directors/21
 Accept: application/json
 Content-Type: application/json
 
 {
-  "name": "superka"
+  "name": "Director_Test"
 }
 
 ###

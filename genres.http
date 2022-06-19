@@ -2,7 +2,7 @@ POST http://localhost:5000/genres/
 Content-Type: application/json
 
 {
-  "name": "superka"
+  "name": "FANTASTIC"
 }
 
 ###
@@ -12,22 +12,22 @@ Accept: application/json
 
 ###
 
-GET http://localhost:5000/genres/1
+GET http://localhost:5000/genres/2
 Accept: application/json
 
 ###
 
-PUT http://localhost:5000/genres/1
+PUT http://localhost:5000/genres/20
 Accept: application/json
 Content-Type: application/json
 
 {
-  "name": "superka"
+  "name": "New_Genre"
 }
 
 ###
 
-DELETE http://localhost:5000/genres/1
+DELETE http://localhost:5000/genres/20
 Accept: application/json
 
 ###
@@ -39,6 +39,5 @@ Content-Type: application/json
 {
   "name": "superka"
 }
-
 
 ###
