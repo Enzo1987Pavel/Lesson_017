@@ -1,0 +1,71 @@
+POST http://localhost:5000/movies/
+Content-Type: application/json
+
+{
+  "title": "New_Movie",
+  "description": "description",
+  "trailer": "trailer",
+  "year": 2222,
+  "rating": 1,
+  "genre_id": 2,
+  "director_id": 4
+}
+
+###
+# Ищем по режисеру 'director_id'
+GET http://localhost:5000/movies/?director_id=2
+Accept: application/json
+
+###
+
+# Ищем по жанру 'genre_id'
+GET http://localhost:5000/movies/?genre_id=4
+Accept: application/json
+
+###
+
+# Ищем по режисеру 'director_id' и по жанру 'genre_id'
+GET http://localhost:5000/movies/?director_id=1&genre_id=1
+Accept: application/json
+
+###
+
+GET http://localhost:5000/movies/
+Accept: application/json
+
+###
+
+GET http://localhost:5000/movies/2
+Accept: application/json
+
+###
+
+PUT http://localhost:5000/movies/5
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "title1",
+  "description": "description",
+  "trailer": "trailer",
+  "year": 1222,
+  "rating": 1,
+  "genre_id": 1,
+  "director_id": 1
+}
+###
+
+DELETE http://localhost:5000/movies/5
+Accept: application/json
+
+###
+
+PATCH http://localhost:5000/movies/2
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "What's your name?"
+}
+
+###
